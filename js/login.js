@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=> {
-    const loginButton = document.querySelector("#login-submi");
+    const loginButton = document.querySelector("#login-submit");
     loginButton.addEventListener('click', handleLogin)
 })
 
@@ -9,6 +9,7 @@ function handleLogin(e){
     const password = document.querySelector("#exampleInputPassword1").value;
 
     if(validateLogin(username, password)){
+        localStorage.setItem("active-session", username)
         window.location.assign('/app.html')
     }
 }
