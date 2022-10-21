@@ -1,0 +1,3 @@
+.DS_Store
+# so this file in gitignore cant be added and tracked using git.
+notes.txt
