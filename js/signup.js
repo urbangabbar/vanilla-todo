@@ -21,6 +21,7 @@ function handleSubmit(e) {
 
 function createNewUser(username, password) {
   localStorage.setItem(username, password);
+  localStorage.setItem("active-session", username)
   window.location.assign("./app.html");
 }
 
